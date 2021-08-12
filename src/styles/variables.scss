@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+
+//Colores importados de bootstrap
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800,
+     
+ 
+);
+
+//Otros colores
+//Colores de la página TMDb
+$darkblue: #0d253f;
+$lightblue: #01b4e4;
+$lightgreen: #90cea1;
