@@ -7,10 +7,10 @@ import CardMovies from '../../components/CardMovies';
 function Home() {
     return <>
     <Bar/>
-    <h1>Cartelera:</h1>
+    <h1 className="home-titles">Cartelera:</h1>
     <Carrousel/>
-    <h1>Peliculas:</h1>
-    
+    <h1 className="home-titles">Peliculas:</h1>
+
     </>
   }
   

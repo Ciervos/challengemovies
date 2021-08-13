@@ -1,5 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
 //Colores importados de bootstrap
 $colors: (
   "blue":       $blue,
@@ -20,7 +23,11 @@ $colors: (
 );
 
 //Otros colores
-//Colores de la página TMDb
+//Colores tomados de la página TMDb
 $darkblue: #0d253f;
 $lightblue: #01b4e4;
 $lightgreen: #90cea1;
+
+$black: #000;
+$graytxt: rgba(0,0,0,0.6);
+$white: #fff;

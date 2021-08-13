@@ -1,1 +1,22 @@
 @import '../../styles/variables.scss';
+
+.bar-cont{
+    color: $white;
+    background-color: $darkblue;
+    display: flex;
+    height: 64px;
+    width: 100%;
+    
+
+.bar-logo{
+  margin: 20px 0 0 40px;  
+  width: 150px;  
+ 
+}    
+    
+.bar-searchcont{
+  margin: 20px 0 0 40px;
+  width: 60%;
+  
+}
+}
