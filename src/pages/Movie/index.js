@@ -1,7 +1,11 @@
 import './style.scss';
+import Bar from '../../components/Bar';
 
 function Movie() {
-    return <div>Página :D(m)</div>
+    return <>
+    <Bar/>
+    
+    </>
   }
   
   export default Movie;

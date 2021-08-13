@@ -16,7 +16,21 @@
     
 .bar-searchcont{
   margin: 20px 0 0 40px;
-  width: 60%;
+  position: absolute;
+  right: 0;
+  width: 300px;
+
+.bar-searchicon{
+ color: $lightblue;   
+ font-size: 20px;   
+}  
   
+.bar-searchbar{
+ border: none;   
+ border-radius: 30px;
+ margin: 0 10px 0 10px;   
+ height: 33px;
+ width: 170px;   
+}  
 }
 }
