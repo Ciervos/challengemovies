@@ -1,8 +1,14 @@
 @import '../../styles/variables.scss';
+.home-cont{
+ 
+  padding: 25px;  
 
-.home-titles{
+ 
+ .home-titles{
     color: $black;
     font-family: 'Source Sans Pro', Arial, sans-serif; 
     font-weight: 700;
+
+ }
 
 }

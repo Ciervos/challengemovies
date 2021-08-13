@@ -18,7 +18,7 @@ function Bar() {
     }
 
     return <div className="bar-cont">
-   <img className="bar-logo" src={logo}/>
+   <img className="bar-logo" alt="Logotipo de TMDb" src={logo}/>
 
    <div className="bar-searchcont">
     <Search className="bar-searchicon" /> 
