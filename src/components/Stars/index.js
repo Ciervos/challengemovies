@@ -3,7 +3,6 @@ import './style.scss';
 import { Star,StarFill,StarHalf } from 'react-bootstrap-icons';
 
 function Stars(props) {
-  console.log(props.data)
   let average = props.data;
   let fullnum = parseInt(props.data) 
   const [totalstars,setTotalStars] = useState(10);
@@ -27,20 +26,20 @@ function Stars(props) {
   }
 
 
-    return <div>
-        
+    return <div className="stars-cont">
+        <div>
         {[...Array(fullnum)].map((x, key) =>
-        <StarFill key={`Full star ${key}`}/>
+        <StarFill className="stars-style" key={`Full star ${key}`}/>
         )
     
         }
-       {halfstar ? <StarHalf/>:false}
+       {halfstar ? <StarHalf className="stars-style"/>:false}
        {[...Array(totalstars-fullnum)].map((x, key) =>
-        <Star key={`star ${key}`}/>
+        <Star  className="stars-style" key={`star ${key}`}/>
         )
        }
 
-         
+        </div> 
         <span className="stars-average">{average}</span>
       </div>
   }

@@ -1,7 +1,18 @@
 @import '../../styles/variables.scss';
 
+.stars-cont{
+display: flex;
+justify-content: space-between;
+    
+.stars-style{
+ color: $darkblue;
+ font-size: 1.5vw;
+}
 
 .stars-average{
     font-family: 'Source Sans Pro', Arial, sans-serif; 
     font-weight: 700;  
+
+}
+
 }
