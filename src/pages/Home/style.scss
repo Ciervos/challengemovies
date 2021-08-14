@@ -11,4 +11,17 @@
 
  }
 
+ .home-cards{
+   
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+ }
+
+ .home-card{
+   width: 20%;
+   margin: 2% 5% 2% 0;
+ }
+
 }
