@@ -16,9 +16,16 @@ function Bar() {
      })
     }
     }
+  
+  function goHome(){
+    history.push({
+      pathname:  `/`, 
+      })
+  }  
+
 
     return <div className="bar-cont">
-   <img className="bar-logo" alt="Logotipo de TMDb" src={logo}/>
+   <img className="bar-logo" alt="Logotipo de TMDb" src={logo} onClick={goHome}/>
 
    <div className="bar-searchcont">
     <Search className="bar-searchicon" /> 
