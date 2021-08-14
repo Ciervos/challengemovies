@@ -5,6 +5,10 @@
     height: 400px;
     max-width: 99%;
 
+  &:hover{
+    cursor: pointer;   
+  }  
+
 .carrousel-img{
     object-fit: cover;
     object-position: 60% 20%;

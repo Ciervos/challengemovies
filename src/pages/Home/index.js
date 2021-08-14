@@ -1,4 +1,5 @@
 import {useState,useEffect} from 'react';
+import {useHistory} from "react-router-dom";
 import './style.scss';
 import Bar from '../../components/Bar';
 import Carrousel from '../../components/Carrousel';
@@ -10,6 +11,7 @@ function Home() {
 
   const [carrousel,setCarrousel] = useState([]);
   const [newmovies,setNewMovies] = useState([]);
+  const history = useHistory();
 
 
   useEffect(() => {
@@ -37,6 +39,14 @@ function Home() {
     
    }
 
+
+   function moviePage(id){
+     
+     history.push({
+      pathname:  `/movie/${id}`, 
+      })
+   }
+
     return <>
     <Bar/>
     <div className="home-cont">
@@ -45,10 +55,10 @@ function Home() {
     <h1 className="home-titles">Películas:</h1>
     <div className="home-cards">
       {newmovies.slice(0, 8).map((movie,key)=>{
-      return (<div className="home-card" key={`New Movie ${key}`}>
+      return (<div className="home-card" key={`New Movie ${key}`} onClick={()=>{moviePage(movie.id)}}>
         <Card data={movie}/>
-        <h6>{movie.title}</h6>
-        <Stars data={movie} />
+        <h6 className="home-card-title">{movie.title}</h6>
+        <Stars data={movie.vote_average} />
         </div>)
       })}
     </div>
