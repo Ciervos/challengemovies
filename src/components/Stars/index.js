@@ -4,7 +4,7 @@ import { Star,StarFill,StarHalf } from 'react-bootstrap-icons';
 
 function Stars(props) {
   let average = props.data;
-  let fullnum = parseInt(props.data) 
+  let fullnum = props.data? parseInt(props.data): 0; 
   const [totalstars,setTotalStars] = useState(10);
   const [halfstar,setHalfStar] = useState(false);
 

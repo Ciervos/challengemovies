@@ -30,7 +30,7 @@ function Home() {
     const data = await fetch(url)
     const dataJson = await data.json();
     
-    console.log(dataJson.results)
+    
     if(ourtarget==="Cartelera"){
       setCarrousel(dataJson.results)
     }else if(ourtarget==="Películas"){
@@ -56,7 +56,7 @@ function Home() {
     <div className="home-cards">
       {newmovies.slice(0, 8).map((movie,key)=>{
       return (<div className="home-card" key={`New Movie ${key}`} onClick={()=>{moviePage(movie.id)}}>
-        <Card data={movie}/>
+        <Card photo={movie.poster_path} title={movie.title}/>
         <h6 className="home-card-title">{movie.title}</h6>
         <Stars data={movie.vote_average} />
         </div>)

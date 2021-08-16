@@ -1,1 +1,29 @@
 @import '../../styles/variables.scss';
+
+.movie-upper{
+ background-color: aquamarine;   
+ display: flex;   
+ height: 500px;
+ padding: 2%;
+ width: 100%;
+
+.movie-upper-info{
+ margin-left: 5%;
+
+.movie-title{
+ color: $black;
+ font-family: 'Source Sans Pro', Arial, sans-serif; 
+ font-size: 24px;
+ font-weight: 700;   
+
+}  
+ 
+.movie-desc{
+ color: $black;
+ font-family: 'Source Sans Pro', Arial, sans-serif; 
+ font-size: 16px;
+ font-weight: 400;
+ margin: 20px 0 20px 0;
+} 
+} 
+}
