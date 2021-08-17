@@ -16,7 +16,7 @@ look and feel del sitio The Movie DB , además de consumir su Api.
 ### Home
 Página principal, cuenta con un carrusel
 y un listado de películas que muestran las
-que se estan actualmente en los cines
+que estan actualmente en los cines
 
 ### Película  
 
