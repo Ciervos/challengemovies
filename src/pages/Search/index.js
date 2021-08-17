@@ -16,7 +16,7 @@ function Search() {
     
     fetchData("Búsqueda",`https://api.themoviedb.org/3/search/movie?api_key=547953ec0c34ba7dfffcabb37017ec4b&query=${oursearch}`)
     
-  }, []);
+  }, [oursearch]);
 
 
   async function fetchData(ourtarget,url) {

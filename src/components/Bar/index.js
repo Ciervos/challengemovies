@@ -16,6 +16,14 @@ function Bar() {
      })
     }
     }
+   
+   function handleKey(e){
+    
+    if(keyword.length>0 && e.keyCode ===13){history.push({
+      pathname:  `/search/${keyword}`, 
+      })
+     }
+   } 
   
   function goHome(){
     history.push({
@@ -29,7 +37,7 @@ function Bar() {
 
    <div className="bar-searchcont">
     <Search className="bar-searchicon" /> 
-    <input className="bar-searchbar" value={keyword} placeholder={"Buscar..."} onChange={(e) => setKeyword(e.target.value)}/>
+    <input className="bar-searchbar" value={keyword} placeholder={"Buscar..."} onChange={(e) => setKeyword(e.target.value)} onKeyUp={(e)=>handleKey(e)}/>
     
     <Button onClick={handleClick} label={"Buscar"}/>
    </div>
