@@ -6,6 +6,7 @@ import Card from '../../components/Card';
 import Stars from '../../components/Stars';
 import Button from '../../components/Button';
 
+
 function Movie() {
 
   const [movie,setMovie] = useState({});
@@ -59,9 +60,11 @@ function Movie() {
     <div className="movie-lower">
     {cast.map((actor,key)=>{
       return (<div className="movie-lower-card" key={`Actor ${key}`}>
-        <Card photo={movie.poster_path} title={movie.title}/>
-        <h6>Nombre</h6>
-        
+          <Card photo={actor.profile_path}  title={actor.name}/>
+          <div className="movie-actorinfo">
+            <h6 className="movie-actorname">{actor.name}</h6>
+            <span className="movie-actorpart">{actor.character}</span>
+          </div>
         </div>)
       })}
     </div>

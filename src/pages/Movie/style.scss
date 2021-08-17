@@ -3,7 +3,7 @@
 .movie-upper{
     
  display: flex;   
- height: 500px;
+ height: 450px;
  padding: 2%;
  width: 100%;
 
@@ -33,11 +33,42 @@
 .movie-lower{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;   
+  height: 360px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 
 .movie-lower-card{
-    width: 10%;
-    margin: 2% 5% 2% 0;
+    
+    border: 1px solid $gray-600;
+    border-radius: 5%;
+    height: 320px;
+    width: 200px;
+    margin: 1%;
+
+ .movie-actorinfo{
+   padding: 10px;  
+   width: 170px;  
+   overflow: hidden; 
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }   
+
+ .movie-actorname{
+    font-family: 'Source Sans Pro', Arial, sans-serif; 
+    font-size: 16px;
+    font-weight: 700;  
+    
+    
+    
+ }
+
+ .movie-actorpart{
+    font-family: 'Source Sans Pro', Arial, sans-serif; 
+    font-size: 14px;
+    font-weight: 400;    
+ 
+    
+} 
 }    
 }
