@@ -7,6 +7,8 @@ function Stars(props) {
   let fullnum = props.data? parseInt(props.data): 0; 
   const [totalstars,setTotalStars] = useState(10);
   const [halfstar,setHalfStar] = useState(false);
+  
+  //props.dark es para cambiar las clases según si el fondo es oscuro o claro
 
   useEffect(() => {
    //Esta función nos ayuda a saber cuantas estrellas necesitaremos para llenar las 10 estrellas
@@ -29,18 +31,18 @@ function Stars(props) {
     return <div className="stars-cont">
         <div>
         {[...Array(fullnum)].map((x, key) =>
-        <StarFill className="stars-style" key={`Full star ${key}`}/>
+        <StarFill className={props.dark? "stars-style-darkbg":"stars-style"} key={`Full star ${key}`}/>
         )
     
         }
-       {halfstar ? <StarHalf className="stars-style"/>:false}
+       {halfstar ? <StarHalf className={props.dark? "stars-style-darkbg":"stars-style"}/>:false}
        {[...Array(totalstars-fullnum)].map((x, key) =>
-        <Star  className="stars-style" key={`star ${key}`}/>
+        <Star  className={props.dark? "stars-style-darkbg":"stars-style"} key={`star ${key}`}/>
         )
        }
 
         </div> 
-        <span className="stars-average">{average}</span>
+        <span className={props.dark? "stars-average-darkbg":"stars-average"}>{average}</span>
       </div>
   }
   

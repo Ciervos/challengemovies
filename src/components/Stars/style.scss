@@ -9,10 +9,22 @@ justify-content: space-between;
  font-size: 1.5vw;
 }
 
+.stars-style-darkbg{
+    color: $lightblue;
+    font-size: 1.5vw;
+   }
+
 .stars-average{
+    color: $black;
     font-family: 'Source Sans Pro', Arial, sans-serif; 
     font-weight: 700;  
 
+}
+
+.stars-average-darkbg{
+    color: $white;
+    font-family: 'Source Sans Pro', Arial, sans-serif; 
+    font-weight: 700; 
 }
 
 }

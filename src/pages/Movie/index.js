@@ -42,11 +42,13 @@ function Movie() {
     <Bar/>
     {/* Sección Película */}
     
-    <div className="movie-upper">
-      <Card photo={movie.poster_path} title={movie.title}/>
+    <div className="movie-upper" style={{ backgroundImage: `linear-gradient(to right,#01b4e4 0%,#0d253f 100%), url(https://www.themoviedb.org/t/p/original${movie.backdrop_path})`, backgroundSize:"cover", backgroundBlendMode:"multiply" }}>
+      
+        <Card photo={movie.poster_path} title={movie.title} h="400px"/>
+      
       <div className="movie-upper-info">
         <h1 className="movie-title">{movie.title}</h1>
-        <Stars data={movie.vote_average}/>
+        <Stars data={movie.vote_average} dark={true}/>
         <p className="movie-desc">{movie.overview}</p>
         <Button onClick={() => history.goBack()} label={"Regresar"}/>
       </div> 
@@ -54,8 +56,14 @@ function Movie() {
 
     {/* Sección Elenco */}
 
-    <div>
-     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    <div className="movie-lower">
+    {cast.map((actor,key)=>{
+      return (<div className="movie-lower-card" key={`Actor ${key}`}>
+        <Card photo={movie.poster_path} title={movie.title}/>
+        <h6>Nombre</h6>
+        
+        </div>)
+      })}
     </div>
 
     </>
