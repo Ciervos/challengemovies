@@ -23,7 +23,7 @@ function Search() {
     const data = await fetch(url)
     const dataJson = await data.json();
     
-    console.log(dataJson.results)
+    
     setResults(dataJson.results)
    }
 
