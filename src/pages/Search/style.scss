@@ -1,1 +1,35 @@
 @import '../../styles/variables.scss';
+
+.search-cont{
+
+padding: 3%;    
+
+.search-title{
+font-family: 'Source Sans Pro', Arial, sans-serif; 
+font-size: 36px;
+font-weight: 700;  
+} 
+
+.search-cards{
+ 
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ width: 100%;   
+
+.search-card{
+ width: 20%;
+ margin: 2% 5% 2% 0;
+    
+&:hover{
+ cursor: pointer; 
+}
+.search-card-title{
+ color: $black;
+ font-family: 'Source Sans Pro', Arial, sans-serif; 
+ font-weight: 700; 
+ margin-top: 5%;   
+}
+}
+}
+}

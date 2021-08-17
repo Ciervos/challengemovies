@@ -29,11 +29,11 @@ function Movie() {
     
     if(ourtarget==="Película"){
       setMovie(dataJson)
-      console.log("Movie",dataJson)
+      
       
     }else if(ourtarget==="Elenco"){
       setCast(dataJson.cast)
-      console.log("Elenco",dataJson.cast)
+      
     }
     
    }
